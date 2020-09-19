@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .wrapper {
+            width: 796px;
+            display: block;
+            margin: auto;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+header{
+    display: flex;
+    padding: 20px 20px;
+    justify-content: space-between;
+    border-bottom: 2px solid #000;
+    margin-bottom: 10px;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.right p{
+    text-align: right;
+}
+p{
+    font-size: 13px;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+}
+.right p.border{
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px;
+    border: 1.5px solid #000;
+    text-align: left;
+    margin-bottom: 10px;
+}
+section.order-id,.order-date{
+    display: flex;
+    justify-content: space-between;
+}
+.large-space {
+    margin-bottom: 20px;
+}
+.order-id-child-2 p{
+    font-size: 17px;
+}
+.order-id-child-2 p span{
+    margin-left: 10px;
+}
+.btn-of-head h5{
+    display: inline-block;
+}
+.btn-of-head h5:nth-child(odd){
+    margin-right: 40px;
+}
+
+thead tr th,tbody tr td{
+    font-size: 11px;
+}
+.table td, .table th {
+    border-top: none;
+}
+.table-sec thead{
+    border-bottom: 2.4px solid #000 !important;
+    border-top: 2px solid #000;
+}
+
+thead{
+        background: transparent !important;
+}
+.total-count{
+    display: flex;
+}
+.total-count table.table{
+    width: 48%;
+    display: inline-block;
+    margin-right: 1%;
+    overflow: hidden;
+}
+
+.total-count .note-sec{
+    width: 48%;
+    display: inline-block;
+    margin-left: 1%;
+    overflow: hidden;
+}
+.btm-of-total{
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1.5px solid #000;
+}
+.border-2{
+    border-top: 1.5px solid #000;
+    border-bottom: 1.5px solid #000;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.mrp-total p span{
+    text-align: right;
+}
+.all-count p{
+    display: inline-block;
+    margin-right: 40px;
+}
+.all-count p:last-of-type{
+    float: right;
+    margin-right: 0;
+}
+.up-section-left{
+    width: 70%;
+    margin-right: 2%;
+    display: inline-block;
+}
+.thank{
+    width: 25%;
+    margin-left: 1%;
+    display: inline-block;
+}
+footer{
+    clear: both;
+}
+.up-footer{
+    display: flex;
+}
+.thank h2{
+    margin-top: 25%;
+}
+.dwn-footer p{
+    font-size: 13px;
+}
+.dwn-footer p:last-of-type{
+    text-align: center;
+    margin-top: 15px;
+}
+.dwn-footer p a{
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+        .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 1rem;
+            background-color: transparent;
+            border-collapse: collapse;
+        }
+
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: rgba(0, 0, 0, .05)
+        }
+
+        .table td,
+        .table th {
+            padding: .75rem;
+            vertical-align: top;
+            border-top: 1px solid #dee2e6
+        }
+
+        thead {
+            background: #abe18b;
+        }
+
+        .table thead th {
+            vertical-align: bottom;
+            border-bottom: 2px solid #dee2e6;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        .table tbody+tbody {
+            border-top: 2px solid #dee2e6
+        }
+
+        .table .table {
+            background-color: #fff
+        }
+
+
+        .table-bordered {
+            border: 1px solid #dee2e6
+        }
+
+        .table-bordered td,
+        .table-bordered th {
+            border: 1px solid #dee2e6
+        }
+
+        .table-bordered thead td,
+        .table-bordered thead th {
+            border-bottom-width: 2px
+        }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="left">
+                <h2>Text Invoice</h2>
+            </div>
+            <div class="right">
+                <p class="border">Invoice Number: C049-19-00440828</p>
+                <p>Original for Recipient</p>
+                <p>Keep the original invoice and barcode on medicines intact for returns</p>
+            </div>
+        </header>
+        <section class="order-id large-space">
+            <div class="order-id-child-1">
+                <h4>Sold By</h4>
+                <p class="large-space">M/S Laxmi Chemist</p>
+                <p>670 Uttar Panchanna Gram, Paschmi Chowbhaga,</p>
+                <p>First Floor, VIP Nagar, Tiljala, Kolkata</p>
+            </div>
+            <div class="order-id-child-2">
+                <p>Order Id <span>15766119</span></p>
+                <p>Order Date<span>2020-02-02</span></p>
+                <p>Invoice Date<span>2020-02-03</span></p>
+            </div>
+            <div class="order-id-child-3">
+                <p>Bill To / Ship To (Patient)</p>
+                <p>Srabanti Choudhury ,</p>
+                <p>Plot No 408, Ghola <br>C Block, Opposite
+                    Raniluthi Marriage Hall, <br>Birati, West
+                    Bengal, 700110</p>
+            </div>
+        </section>
+        <section class="order-date large-space">
+            <div class="order-date-cld-1">
+                <h5>DL Number</h5>
+                <p>WB/KOL/NBO/R/277130(2024-10-24)</p>
+                <p>WB/KOL/BIO/R/277130(2024-10-24),</p>
+            </div>
+            <div class="order-date-cld-2">
+                <h5>Doctor Name</h5>
+                <h5>Dr. M DAS,<br>
+                    PRAMOD</h5>
+            </div>
+        </section>
+        <div class="btn-of-head large-space ">
+            <h5>GSTIN <span style="margin-left: 20px;">19AAHFL1873B1ZE</span></h5>
+            <h5>POS : 19-West Bengal</h5>
+        </div>
+        <div class="table-sec" style="margin-bottom: 50px">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>S NO</th>
+                        <th>Description of Goods</th>
+                        <th>MFR/MKT</th>
+                        <th>HSN</th>
+                        <th>Batch No</th>
+                        <th>Exp</th>
+                        <th>MRP</th>
+                        <th>Discount</th>
+                        <th>Unit Price</th>
+                        <th>GST % Q</th>
+                        <th>QTY</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>DR MOREPEN DIGITAL THERMOMETERS MT 111</td>
+                        <td>DR</td>
+                        <td>3004</td>
+                        <td>18112735-1</td>
+                        <td>08/29</td>
+                        <td>190.00</td>
+                        <td>47.41</td>
+                        <td>142.59</td>
+                        <td>12.00</td>
+                        <td>1</td>
+                        <td>190</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>DR MOREPEN DIGITAL</td>
+                        <td>DR</td>
+                        <td>3004</td>
+                        <td>18112735-1</td>
+                        <td>08/29</td>
+                        <td>190.00</td>
+                        <td>47.41</td>
+                        <td>142.59</td>
+                        <td>12.00</td>
+                        <td>1</td>
+                        <td>190</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>THERMOMETERS MT 111</td>
+                        <td>DR</td>
+                        <td>3004</td>
+                        <td>18112735-1</td>
+                        <td>08/29</td>
+                        <td>190.00</td>
+                        <td>47.41</td>
+                        <td>142.59</td>
+                        <td>12.00</td>
+                        <td>1</td>
+                        <td>190</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td> DIGITAL THERMOMETERS 111</td>
+                        <td>DR</td>
+                        <td>3004</td>
+                        <td>18112735-1</td>
+                        <td>08/29</td>
+                        <td>190.00</td>
+                        <td>47.41</td>
+                        <td>142.59</td>
+                        <td>12.00</td>
+                        <td>1</td>
+                        <td>190</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="total-count">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Taxable Value</th>
+                        <th>SGST %</th>
+                        <th>SGST Amt</th>
+                        <th>CGST %</th>
+                        <th>CGST Amt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>909.04</td>
+                        <td>6.0</td>
+                        <td>54.54</td>
+                        <td>6.0 </td>
+                        <td>54.54</td>
+                    </tr>
+                    <tr>
+                        <td>909.04</td>
+                        <td>6.0</td>
+                        <td>54.54</td>
+                        <td>6.0 </td>
+                        <td>54.54</td>
+                    </tr>
+                    <tr>
+                        <td>909.04</td>
+                        <td>6.0</td>
+                        <td>54.54</td>
+                        <td>6.0 </td>
+                        <td>54.54</td>
+                    </tr>
+                    <tr>
+                        <td>909.04</td>
+                        <td>6.0</td>
+                        <td>54.54</td>
+                        <td>6.0 </td>
+                        <td>54.54</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note-sec">
+                <p>Note:</p>
+            </div>
+        </div>
+        <section class="border-2 large-space">
+            <div class="btm-of-total">
+                <p>Name of the <br>Pharmacist <span>Swarup Nanda</span></p>
+                <p> PR Number<span>A-16306</span></p>
+                <p></p>
+            </div>
+            <div class="middel-child">
+                <h5>For M/S Laxmi Chemist</h5>
+                <span style="font-size: 13px;">Pharmacist Signature</span>
+            </div>
+            <div class="mrp-total">
+                <p>MRP Total span</p>
+                <p>PharmEasy Savings @ 20.0% span</p>
+                <p>Subtotal span</p>
+                <p>Coupon Saving span</p>
+                <p>Rounding Off span</p>
+            </div>
+            <div class="amount">
+                <p>100.00</p>
+                <p>100.00</p>
+                <p>100.00</p>
+                <p>100.00</p>
+                <p>100.00</p>
+            </div>
+        </section>
+        <div class="all-count large-space">
+            <p>Note: Total savings Rs. 321.00 </p>
+            <p>Total Invoice Amount Rs.</p>
+            <p>1018.00</p>
+        </div>
+        <footer>
+            <div class="up-footer large-space">
+                <div class="up-section-left">
+                <p style="font-size:15px;">Amount In Words : One thousand Eighteen Rupees And zero paise.</p>
+                <p style="font-size:15px;">*Charges inclusive of GST (HSN - 9997)</p>
+                <p>Customer Acknowledgement: I,Srabanti Choudhury , Debasish Choudhury hereby recognise and accept the delivery of my order in full as
+                    prescribed by my doctor. I acknowledge that the ordered medicines are for my own consumption and will not be used to sell to any third party
+                    until specified for.</p>
+                <p>Pharmeasy is only a technology platform and facilitates the connect between the retailer and customer. For further details please visit
+                    <a href="#">https://pharmeasy.in/terms-and-conditions.</a>
+                </p>
+            </div>
+            <div class="thank">
+                <h2>Thank You!</h2>
+                <p style="font-size:15px;">For ordering medicines with us</p>
+            </div>
+            </div>
+            <div class="dwn-footer">
+                <p>Whether reverse charge is applicable - No</p>
+                <p>Contact For Support : <a href="tel:07666100300">07666100300</a> || <a href="mailto:care@pharmeasy.in">Email: care@pharmeasy.in</a>
+</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
